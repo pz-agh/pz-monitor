@@ -1,0 +1,42 @@
+10
+
+dir
+0
+https://github.com/pz-agh/pz-monitor/trunk/przykladowyWykres/nbproject
+https://github.com/pz-agh/pz-monitor
+add
+
+
+
+
+
+has-props
+has-prop-mods
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+09c72659-0c43-f0d8-b3d1-ce57b7db7bff
+
+project.properties
+file
+
+
+
+add
+
+project.xml
+file
+
+
+
+add
+
