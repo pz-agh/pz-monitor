@@ -1,0 +1,28 @@
+rar tomcata z Monitorem 
+
+http://www.sendspace.pl/file/83c43456ddb9debd549ae64
+
+tomcat powinien znajdować sie w takich lokalizacji :
+D:\lf\pz-monitor\liferay-portal-6.1.1-ce-ga2\tomcat-7.0.27
+
+Oczywiście można ją zmieniać ale wymaga to modyfikacji plików konguracyjnych. 
+Jak ktoś nie ma D... polecam subst do mapowania dysków
+
+
+Projekt właczamy tak jak tomcata startup z D:\lf\pz-monitor\liferay-portal-6.1.1-ce-ga2\tomcat-7.0.27\bin
+
+Metody Monitora (gety nie wymagaja autoryzacji)+ przykładowe wyniki
+
+http://localhost:8080/api/secure/json?serviceClassName=monitor.service.MeasurementServiceUtil&serviceMethodName=getMeasurement&measurementId=201&serviceParameters=[measurementId]
+
+"{\"resource_id\":\"005056C00008\",\"resource_name\":\"Kamil_PC\",\"measurement_time\":\"14-05-14:21:36:13\",\"cpu_cores\":4,\"total_memory\":4151,\"free_memory\":879,\"cpu_usage\":60.00199988718585,\"measurement_id\":201}"
+
+
+http://localhost:8080/api/secure/json?serviceClassName=monitor.service.MeasurementServiceUtil&serviceMethodName=getMeasurements&resourceId=005056C00008&serviceParameters=[resourceId]
+
+"[{\"measurement_id\":205},{\"measurement_id\":204},{\"measurement_id\":203},{\"measurement_id\":202},{\"measurement_id\":201},{\"measurement_id\":101}]"
+
+
+http://localhost:8080/api/secure/json?serviceClassName=monitor.service.MeasurementServiceUtil&serviceMethodName=getResources
+
+"[{\"resource_id\":\"005056C00008\",\"resource_name\":\"Kamil_PC\"}]"
