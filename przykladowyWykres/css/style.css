@@ -1,0 +1,33 @@
+/* 
+    Document   : style
+    Created on : 2014-06-01, 14:28:57
+    Author     : Natalia
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.ui-progressbar {
+    position: relative;
+}
+.progress-label {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+table,th,td
+{
+    border:1px solid black;
+    border-spacing:5px;
+}
+
+th,td
+{
+    padding:15px;
+}
+
