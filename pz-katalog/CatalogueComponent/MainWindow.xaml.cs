@@ -387,6 +387,6 @@ namespace CatalogueComponent
       private OutputHelper m_OutHelper;
       private bool m_bHttpListenerEnabled;
       private Thread m_HttpListenerThread;
-       private const string Filename = @"D:\lf\pz-monitor\db.xml";
+       private const string Filename = @"db.xml";
    }
 }
